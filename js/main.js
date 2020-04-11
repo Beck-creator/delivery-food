@@ -8,5 +8,11 @@ close.addEventListener("click", toggleModel);
 function toggleModel() {
   modal.classList.toggle("is-open");
 }
-
-new WoW().init();
+wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: true,
+    live: true
+})
+wow.init();
